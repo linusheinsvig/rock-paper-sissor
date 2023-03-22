@@ -1,0 +1,136 @@
+:root {
+    --clr-light: #fff;
+    --clr-gray: #ccc;
+    --clr-dark: #111;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+}
+
+h2 {
+    color: var(--clr-light);
+}
+
+.game-window {
+    border: 2px solid var(--clr-dark);
+    margin: auto;
+    height: 60vh;
+    width: 80vw;
+}
+
+.choises {
+    width: 90%;
+    background-color: var(--clr-grey);
+    padding: 10px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    flex: 1;
+    gap: 10px;
+}
+
+.rock {
+    width: 10vw;
+    height: 20vh;
+    background-color: var(--clr-dark);
+    transition: 0.5s;
+    transform: scale(1);
+    text-align: center;
+    border-radius: 25px;
+    flex: 1;
+}
+
+.rock:hover {
+    background-color: var(--clr-light);
+    transform: scale(1.1); 
+    z-index: 2;
+    box-shadow: 10px 10px 10px 10px var(--clr-gray);
+    flex: 1;
+}
+
+.paper {
+    width: 10vw;
+    height: 20vh;
+    background-color: var(--clr-dark);
+    background-size: fill;
+    transition: 0.5s;
+    transform: scale(1);
+    text-align: center;
+    border-radius: 25px;
+    flex: 1;
+}
+
+.paper:hover {
+    background-color: var(--clr-light);
+    transform: scale(1.1); 
+    z-index: 2;
+    box-shadow: 10px 10px 10px 10px var(--clr-gray);
+    flex: 1;
+}
+
+.scissors {
+    width: 10vw;
+    height: 20vh;
+    background-color: var(--clr-dark);
+    transition: 0.5s;
+    transform: scale(1);
+    text-align: center;
+    border-radius: 25px;
+    flex: 1;
+}
+
+.scissors:hover {
+    background-color: var(--clr-light);
+    transform: scale(1.1); 
+    z-index: 2;
+    box-shadow: 10px 10px 10px 10px var(--clr-gray);
+    flex: 1;
+}
+
+.score {
+    width: 90%;
+    background-color: var(--clr-grey);
+    padding: 10px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    flex: 1;
+    
+}
+
+.your-score {
+    width: 40vw;
+    height: 20vh;
+    background-color: var(--clr-dark);
+    margin: 10px;
+    transition: 0.5s;
+    transform: scale(1);
+    text-align: center;
+    border-radius: 25px;
+}
+
+.oponent-score {
+    width: 40vw;
+    height: 20vh;
+    background-color: var(--clr-dark);
+    margin: 10px;
+    transition: 0.5s;
+    transform: scale(1);
+    text-align: center;
+    border-radius: 25px;
+}

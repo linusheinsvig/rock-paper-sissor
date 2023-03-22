@@ -29,7 +29,11 @@ h3 {
     color: var(--clr-dark);
     text-align: center;
     font-size: 2em;
-    padding: 20px;
+    padding: 0.5em;
+}
+
+span {
+    color: var(--clr-light);
 }
 
 .game-window {
@@ -127,7 +131,7 @@ h3 {
 
 .your-score {
     width: 40vw;
-    height: 20vh;
+    height: 10vh;
     background-color: var(--clr-dark);
     margin: 10px;
     transition: 0.5s;
@@ -138,7 +142,7 @@ h3 {
 
 .oponent-score {
     width: 40vw;
-    height: 20vh;
+    height: 10vh;
     background-color: var(--clr-dark);
     margin: 10px;
     transition: 0.5s;

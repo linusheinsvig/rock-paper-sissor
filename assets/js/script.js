@@ -1,7 +1,8 @@
 let userScore = 0;
 let oponentScore = 0;
-let userScoreSpan = document.getElementById('yourScore');
+let userScoreSpan = document.getElementById('userScore');
 let oponentScoreSpan = document.getElementById('oponentScore');
+let result = document.getElementById('result')
 let rock = document.getElementById('rock');
 let paper = document.getElementById('paper')
 let scissors = document.getElementById('scissors')
@@ -12,8 +13,10 @@ function getComputerChoice() {
     return choices[randomNumber];
 }
 
-function win() {
-    console.log("WIN")
+function win(userChoice, computerChoice) {
+    userScore++;
+    userScoreSpan.innerHTML = userScore;
+    result.innerHTML = 'You Win!';
 }
 
 function lose() {
@@ -30,17 +33,17 @@ function game(userChoice) {
         case 'rockscissors':
         case 'paperrock':
         case 'scissorspaper':
-            win();
+            win(userChoice, computerChoice);
             break;
         case 'rockpaper':
         case 'paperscissors':
         case 'scissorsrock':
-            lose();
+            lose(userChoice, computerChoice);
             break;
         case 'rockrock':
         case 'paperpaper':
         case 'scissorsscissors':
-            draw();
+            draw(userChoice, computerChoice);
             break;    
     }
 }

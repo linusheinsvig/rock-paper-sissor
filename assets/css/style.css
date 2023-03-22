@@ -16,6 +16,7 @@ body{
     background-color: var(--clr-background);
 }
 
+
 header img {
     width: 2.5em;
 }
@@ -25,7 +26,6 @@ h1 {
     font-size: 5em;
     text-align: center;
     color: var(--clr-dark);
-    line-height: c;
 }
 
 h2, h3 {
@@ -52,103 +52,62 @@ span {
 .choises {
     width: 80%;
     height: 20%;
-    background-color: var(--clr-grey);
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 25px;
-    flex: 1;
-    gap: 1em;
+}
+
+.choises div {
+    height: 10em;
+    width: 10rem;
+    border-radius: 25px;
+    transition: 0.5s;
+    transform: scale(1);
+    margin-left: 2em;
+    padding: 1em;
+}
+
+.choises div:hover {
+background-color: var(--clr-light);
+transform: scale(1.3); 
+z-index: 2;
+box-shadow: 10px 10px 10px 10px var(--clr-gray);
 }
 
 .rock {
-    flex-basis: 30%;
     background-image: url(/assets/images/rock.png);
     background-size: 100% 100%;
-    transition: 0.5s;
-    transform: scale(1);
-    text-align: center;
-    border-radius: 25px;
-    flex: 1;
-}
-
-.rock:hover {
-    background-color: var(--clr-light);
-    transform: scale(1.1); 
-    z-index: 2;
-    box-shadow: 10px 10px 10px 10px var(--clr-gray);
-    flex: 1;
 }
 
 .paper {
-    flex-basis: 30%;
     background-image: url(/assets/images/paper.png);
     background-size: 100% 100%;
-    background-size: fill;
-    transition: 0.5s;
-    transform: scale(1);
-    text-align: center;
-    border-radius: 25px;
-    flex: 1;
-}
-
-.paper:hover {
-    background-color: var(--clr-light);
-    transform: scale(1.1); 
-    z-index: 2;
-    box-shadow: 10px 10px 10px 10px var(--clr-gray);
-    flex: 1;
 }
 
 .scissors {
-    flex-basis: 30%;
     background-image: url(/assets/images/scissor.png);
     background-size: 100% 100%;
-    transition: 0.5s;
-    transform: scale(1);
-    text-align: center;
-    border-radius: 25px;
-    flex: 1;
-}
-
-.scissors:hover {
-    background-color: var(--clr-light);
-    transform: scale(1.1); 
-    z-index: 2;
-    box-shadow: 10px 10px 10px 10px var(--clr-gray);
-    flex: 1;
 }
 
 .score {
-    width: 90%;
-    padding: 10px;
+    width: 80%;
+    height: 20%;
     margin: 20px auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     border-radius: 25px;
-    flex: 1;
-    
 }
 
-.your-score {
-    width: 40vw;
-    height: 10vh;
+.score div {
+    height: 15em;
+    width: 15rem;
     background-color: var(--clr-gray);
-    margin: 10px;
-    transition: 0.5s;
-    transform: scale(1);
     text-align: center;
     border-radius: 25px;
-}
-
-.oponent-score {
-    width: 40vw;
-    height: 10vh;
-    background-color: var(--clr-gray);
-    margin: 10px;
     transition: 0.5s;
     transform: scale(1);
-    text-align: center;
-    border-radius: 25px;
+    margin-left: 2em;
 }

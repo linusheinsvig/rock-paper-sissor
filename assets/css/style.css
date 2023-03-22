@@ -1,8 +1,9 @@
 :root {
-    --clr-light: #fff;
-    --clr-gray: #ccc;
-    --clr-dark: #111;
-
+    --clr-light: #fffcf2;
+    --clr-gray: #ccc5b9 ;
+    --clr-dark: #252422;
+    --clr-background: #f8f8fa;
+    
 }
 
 * {
@@ -12,20 +13,22 @@
 }
 
 body{
-   
+    background-color: var(--clr-background);
+}
+
+header img {
+    width: 2.5em;
 }
 
 
 h1 {
-    font-size: 4em;
+    font-size: 5em;
     text-align: center;
+    color: var(--clr-dark);
+    line-height: c;
 }
 
-h2 {
-    color: var(--clr-light);
-}
-
-h3 {
+h2, h3 {
     color: var(--clr-dark);
     text-align: center;
     font-size: 2em;
@@ -33,32 +36,34 @@ h3 {
 }
 
 span {
-    color: var(--clr-light);
+    color: var(--clr-dark);
+    font-size: 3em;
 }
 
 .game-window {
     border: 2px solid var(--clr-dark);
+    background-color: var(--clr-light);
     margin: auto;
-    height: 60vh;
+    height: 800px;
     width: 80vw;
     border-radius: 25px;
 }
 
 .choises {
-    width: 70%;
+    width: 80%;
+    height: 20%;
     background-color: var(--clr-grey);
-    padding: 10px;
     margin: 20px auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     border-radius: 25px;
     flex: 1;
-    gap: 4em;
+    gap: 1em;
 }
 
 .rock {
-    width: 5vw;
-    height: 15vw;
+    flex-basis: 30%;
     background-image: url(/assets/images/rock.png);
     background-size: 100% 100%;
     transition: 0.5s;
@@ -77,8 +82,7 @@ span {
 }
 
 .paper {
-    width: 5vw;
-    height: 15vw;
+    flex-basis: 30%;
     background-image: url(/assets/images/paper.png);
     background-size: 100% 100%;
     background-size: fill;
@@ -98,8 +102,7 @@ span {
 }
 
 .scissors {
-    width: 5vw;
-    height: 15vw;
+    flex-basis: 30%;
     background-image: url(/assets/images/scissor.png);
     background-size: 100% 100%;
     transition: 0.5s;
@@ -119,7 +122,6 @@ span {
 
 .score {
     width: 90%;
-    background-color: var(--clr-grey);
     padding: 10px;
     margin: 20px auto;
     display: flex;
@@ -132,7 +134,7 @@ span {
 .your-score {
     width: 40vw;
     height: 10vh;
-    background-color: var(--clr-dark);
+    background-color: var(--clr-gray);
     margin: 10px;
     transition: 0.5s;
     transform: scale(1);
@@ -143,7 +145,7 @@ span {
 .oponent-score {
     width: 40vw;
     height: 10vh;
-    background-color: var(--clr-dark);
+    background-color: var(--clr-gray);
     margin: 10px;
     transition: 0.5s;
     transform: scale(1);

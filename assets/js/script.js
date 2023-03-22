@@ -20,11 +20,13 @@ function win(userChoice, computerChoice) {
 }
 
 function lose() {
-    console.log("LOST")
+    oponentScore++;
+    oponentScoreSpan.innerHTML = oponentScore;
+    result.innerHTML = 'You Lose!';
 }
 
 function draw() {
-    console.log("DRAW")
+    result.innerHTML = "It's a Draw!";
 }
 
 function game(userChoice) {

@@ -9,7 +9,7 @@ let scissors = document.getElementById('scissors')
 
 function getComputerChoice() {
     let choices = ['rock', 'paper', 'scissors'];
-    let randomNumber = Math.floor(Math.random() *3);
+    let randomNumber = Math.floor(Math.random() * 3);
     return choices[randomNumber];
 }
 
@@ -29,6 +29,7 @@ function lose(userChoice, computerChoice) {
     oponentScore++;
     oponentScoreSpan.innerHTML = oponentScore;
     result.innerHTML = `${convertToI(userChoice)}  Gets Beaten By  ${convertToI(computerChoice)} <br> You Lose...`;
+    document.getElementsByClassName('result-box').classList.add('.wrong')
 }
 
 function draw(userChoice, computerChoice) {
@@ -53,23 +54,23 @@ function game(userChoice) {
         case 'paperpaper':
         case 'scissorsscissors':
             draw(userChoice, computerChoice);
-            break;    
+            break;
     }
 }
 
 
 function main() {
-rock.addEventListener('click', function(){
-    game('rock');
-}) 
+    rock.addEventListener('click', function () {
+        game('rock');
+    })
 
-paper.addEventListener('click', function(){
-    game('paper');
-}) 
+    paper.addEventListener('click', function () {
+        game('paper');
+    })
 
-scissors.addEventListener('click', function(){
-    game('scissors')
-}) 
+    scissors.addEventListener('click', function () {
+        game('scissors')
+    })
 }
 
 main();

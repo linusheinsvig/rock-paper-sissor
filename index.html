@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,11 +13,12 @@
     <link rel="manifest" href="/site.webmanifest">
     <title>RockPaperScissors</title>
 </head>
+
 <body>
     <header>
         <div class="header">
-        <h1 id="logo">Rock Paper Scissors
-            <img src="assets/images/logo-img.png" alt="logo"></h1>
+            <h1 id="logo">Rock Paper Scissors
+                <img src="assets/images/logo-img.png" alt="logo"></h1>
         </div>
     </header>
 
@@ -28,17 +30,23 @@
             <div class="scissors" id="scissors"></div>
         </div>
 
-        
-        <div>
-            <h3>Results:</h3>
-            <h3 id="result"></h3>
-            <div class="score" id="score">
-            <div class="your-score" id="your-score"><h2>Your Score</h2><span id="userScore">0</span></div>
-            <div class="oponent-score" id="oponent-score"><h2>Oponent Score</h2><span id="oponentScore">0</span></div>
+
+        <div class="result-box">
+            <h3 id="result">Rules:<br>Rock beats Scissors<br>Scissors beats Paper<br>Paper beats Rock</h3>
+        </div>  
+        <div class="score" id="score">
+            <div class="your-score" id="your-score">
+                <h2>Your Score</h2><span id="userScore">0</span>
+            </div>
+            <img src="assets/images/rules.png" alt="rules">
+            <div class="oponent-score" id="oponent-score">
+                <h2>Oponent Score</h2><span id="oponentScore">0</span>
+            </div>
         </div>
     </div>
-    
+
 
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

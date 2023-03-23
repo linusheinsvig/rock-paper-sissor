@@ -2,13 +2,11 @@
 
 :root {
     --clr-light: #fffcf2;
-    --clr-gray: #ccc5b9 ;
+    --clr-gray: #ccc5b9;
     --clr-dark: #252422;
     --clr-background: #f8f8fa;
     --font-logo: Caveat, cursive;
     --font-text: Libre Franklin, sans-serif;
-
-    
 }
 
 * {
@@ -17,17 +15,17 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: var(--clr-background);
     font-family: var(--font-text);
 }
 
+/* Header and text sizes */
 
 header img {
     width: 9vw;
     margin-top: 1vw;
 }
-
 
 h1 {
     font-size: 7vw;
@@ -40,15 +38,14 @@ h1 {
 h2 {
     color: var(--clr-dark);
     text-align: center;
-    font-size: 3vw;
-    margin: 2vw;
+    font-size: 2vw;
+    margin: 1vw;
 }
 
 h3 {
     color: var(--clr-dark);
     text-align: center;
     font-size: 3vw;
-    padding: 0.5em;
 }
 
 span {
@@ -56,28 +53,32 @@ span {
     font-size: 4vw;
 }
 
+/* Game Window */
+
 .game-window {
-    border: 2px solid var(--clr-dark); 
+    border: 2px solid var(--clr-dark);
     background-color: var(--clr-light);
     margin: auto;
     min-width: fit-content;
-    max-width: 90vw;
+    max-width: fit-content;
     border-radius: 25px;
     display: grid;
     grid-template-columns: 3, 1fr;
 }
+
+/* Users three choises */
 
 .choises {
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border-radius: 25px; 
+    border-radius: 25px;
 }
 
 .choises div {
-    height: 15vw;
-    width: 15vw;
+    height: 10vw;
+    width: 10vw;
     border-radius: 25px;
     transition: 0.5s;
     transform: scale(1);
@@ -85,10 +86,10 @@ span {
 }
 
 .choises div:hover {
-background-color: var(--clr-light);
-transform: scale(1.3); 
-z-index: 2;
-box-shadow: 10px 10px 10px 10px var(--clr-gray);
+    background-color: var(--clr-light);
+    transform: scale(1.3);
+    z-index: 2;
+    box-shadow: 10px 10px 10px 10px var(--clr-gray);
 }
 
 .rock {
@@ -106,6 +107,20 @@ box-shadow: 10px 10px 10px 10px var(--clr-gray);
     background-size: 100% 100%;
 }
 
+/* Result text box */
+
+.result-box {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.score  img{
+    width: 10vw;
+}
+
+/* Scoring area */
+
 .score {
     margin: 20px auto;
     display: flex;
@@ -115,12 +130,12 @@ box-shadow: 10px 10px 10px 10px var(--clr-gray);
 }
 
 .score div {
-    height: 15vw;
-    width: 30vw; 
+    height: 10vw;
+    width: 20vw;
     background-color: var(--clr-gray);
     text-align: center;
     border-radius: 25px;
     transition: 0.5s;
     transform: scale(1);
-    margin:0 2em 0 2em;
+    margin: 0 2em 0 2em;
 }

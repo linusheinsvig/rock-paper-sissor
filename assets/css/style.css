@@ -50,7 +50,7 @@ span {
 }
 
 .game-window {
-    border: 2px solid var(--clr-dark);
+    border: 2px solid var(--clr-dark); 
     background-color: var(--clr-light);
     margin: auto;
     min-width: 90vw;
@@ -61,8 +61,6 @@ span {
 }
 
 .choises {
- /*   width: 80%;
-    height: 20%; */
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
@@ -71,8 +69,8 @@ span {
 }
 
 .choises div {
-    height: 20vw;
-    width: 20vw;
+    height: 15vw;
+    width: 15vw;
     border-radius: 25px;
     transition: 0.5s;
     transform: scale(1);
@@ -110,7 +108,7 @@ box-shadow: 10px 10px 10px 10px var(--clr-gray);
 }
 
 .score div {
-    height: 20vw;
+    height: 15vw;
     width: 30vw; 
     background-color: var(--clr-gray);
     text-align: center;

@@ -13,20 +13,27 @@ function getComputerChoice() {
     return choices[randomNumber];
 }
 
+function convertToI(word) {
+    if (word === 'rock') return '<i class="fa-regular fa-hand-back-fist"></i>'
+    if (word === 'paper') return '<i class="fa-regular fa-hand"></i>'
+    if (word === 'scissors') return '<i class="fa-regular fa-hand-scissors"></i>'
+}
+
 function win(userChoice, computerChoice) {
     userScore++;
     userScoreSpan.innerHTML = userScore;
-    result.innerHTML = 'You Win!';
+    result.innerHTML = `${convertToI(userChoice)}  Beats  ${convertToI(computerChoice)} <br> Your a Winner!`;
 }
 
-function lose() {
+function lose(userChoice, computerChoice) {
     oponentScore++;
     oponentScoreSpan.innerHTML = oponentScore;
-    result.innerHTML = 'You Lose!';
+    result.innerHTML = `${convertToI(userChoice)}  Gets Beaten By  ${convertToI(computerChoice)} <br> You Lose...`;
 }
 
-function draw() {
+function draw(userChoice, computerChoice) {
     result.innerHTML = "It's a Draw!";
+    result.innerHTML = `${convertToI(userChoice)}  Cant't Do Anything To  ${convertToI(computerChoice)} <br> It's a Draw!`;
 }
 
 function game(userChoice) {

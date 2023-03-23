@@ -18,55 +18,65 @@ body{
 
 
 header img {
-    width: 2.5em;
+    width: 9vw;
+    margin-top: 1vw;
 }
 
 
 h1 {
-    font-size: 5em;
+    font-size: 7vw;
     text-align: center;
     color: var(--clr-dark);
+    margin: 1vw 0 1vw 0;
 }
 
-h2, h3 {
+h2 {
     color: var(--clr-dark);
     text-align: center;
-    font-size: 2em;
+    font-size: 3vw;
+    margin: 2vw;
+}
+
+h3 {
+    color: var(--clr-dark);
+    text-align: center;
+    font-size: 3vw;
     padding: 0.5em;
 }
 
 span {
     color: var(--clr-dark);
-    font-size: 3em;
+    font-size: 4vw;
 }
 
 .game-window {
     border: 2px solid var(--clr-dark);
     background-color: var(--clr-light);
     margin: auto;
-    height: 800px;
-    width: 80vw;
+    min-width: 90vw;
+    max-width: fit-content;
     border-radius: 25px;
+    display: grid;
+    grid-template-columns: 3, 1fr;
 }
 
 .choises {
-    width: 80%;
-    height: 20%;
+ /*   width: 80%;
+    height: 20%; */
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border-radius: 25px;
+    border-radius: 25px; 
 }
 
 .choises div {
-    height: 10em;
-    width: 10rem;
+    height: 20vw;
+    width: 20vw;
     border-radius: 25px;
     transition: 0.5s;
     transform: scale(1);
-    margin-left: 2em;
-    padding: 1em;
+    margin: 1vw 2vw;
 }
 
 .choises div:hover {
@@ -92,8 +102,6 @@ box-shadow: 10px 10px 10px 10px var(--clr-gray);
 }
 
 .score {
-    width: 80%;
-    height: 20%;
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
@@ -102,12 +110,12 @@ box-shadow: 10px 10px 10px 10px var(--clr-gray);
 }
 
 .score div {
-    height: 15em;
-    width: 15rem;
+    height: 20vw;
+    width: 30vw; 
     background-color: var(--clr-gray);
     text-align: center;
     border-radius: 25px;
     transition: 0.5s;
     transform: scale(1);
-    margin-left: 2em;
+    margin:0 2em 0 2em;
 }

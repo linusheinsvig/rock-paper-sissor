@@ -19,7 +19,6 @@ body {
     background-color: var(--clr-background);
     font-family: var(--font-text);
     text-align: center;
-    font-size: 2vw;
 }
 
 /* Header and text sizes */
@@ -30,7 +29,7 @@ header img {
 }
 
 h1 {
-    font-size: clamp(3em, 7vw, 8em);
+    font-size: clamp(4em, 7vw, 8em);
     text-align: center;
     color: var(--clr-dark);
     margin: 1vw 0 1vw 0;
@@ -39,14 +38,15 @@ h1 {
 
 h2 {
     color: var(--clr-dark);
-    font-size: clamp(2em, 4vw, 4em);
+    font-size: clamp(1em, 3vw, 2em);
 }
 
 h3 {
     color: var(--clr-dark);
-    font-size: clamp(1em, 2vw, 2em);
+    font-size: clamp(1em, 3vw, 1.5em); 
     margin: 1vw;
 }
+
 
 main {
     display: grid;
@@ -54,21 +54,21 @@ main {
     gap: 2em;
     padding: 1em;
     border-radius: 25px;
-    width: fit-content;
+    width: 90vw;
     margin: auto;
-}
+} 
 
 footer {
     padding: 2em;
 }
 
 footer a {
-    padding: 2em;
+    padding: 1em;
     text-decoration: none;
     color: var(--clr-dark);
     transform: scale(1);
     transition: 0.5s;
-    font-size: 2.5vw;
+    font-size: 2rem;
 }
 
 footer a i:hover {
@@ -151,13 +151,13 @@ footer a i:hover {
 .score {
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     border-radius: 25px;
 }
 
 .score div {
-    height: 10vw;
+    height: fit-content;
     width: 20vw;
     background-color: var(--clr-gray);
     text-align: center;

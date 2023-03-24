@@ -48,3 +48,68 @@ https://linusheinsvig.github.io/rock-paper-sissor/
     <li>They will guide you to the creaters social media sites and allows you to send him an Email
     </li>
 </ul>    
+
+## Technologies
+<hr>
+<ul>
+    <li>HTML
+        <ul><li>The structure of the page was made using the HTML language</li></ul>
+    <li>CSS
+        <ul><li>The styling of the website was done with CSS in an external file</li></ul></li>
+    <li>JavaScript
+        <ul><li>JavaScript was used for all the functions of the game and the code is placed in an external document</li></ul>
+    </li>
+    <li>GitPod & Git
+        <ul><li>All the code was written on GitPod using the template provided by Code Insitute
+        <li>Git was used to commit and push the code to GitHub</li></ul>
+    <li>GitHub
+        <ul><li>The code is hosted on Github and deployed using github-pages</li></ul>
+    <li>Font Awsome
+        <ul></li>The icons used for social media links was found on
+        https://fontawesome.com</li></ul>
+    <li>Favicon.io
+        <ul><li>I created the logo in the tab using favicon
+        https://favicon.io</li></ul>
+    <li>Google Fonts
+        <ul><li>The fonts are imported from https://fonts.google.com/</li></ul>
+    </li>
+</ul>        
+
+## Testing
+<hr>
+
+### Responsivness
+<hr> 
+
+#### Steps of testing:
+<ol>
+<li>Open browser and navigate to 
+
+https://linusheinsvig.github.io/rock-paper-sissor/
+
+<li>Open developer tools (right click and pick inspect)
+<li>Chose responsive and set width to 280px
+<li>Set zoom to 50%
+<li>Drag the responsive window to maximum width
+</ol>
+
+#### Expected:
+Website is responsive on all screen sizes with no elements overlapping and no horizontal scroll
+
+#### Results:
+I find no problems using the game on any size of screen
+
+Devices used to test website:
+<ul>
+<li>Macbook Air
+<li>Macbook Air with 32 inch external monitor
+<li>Iphone 12
+<li>Iphone 12 Max
+</ul>
+
+Wave Accessibility test
+<hr>
+<img src="assets/README-images/Ska%CC%88rmavbild%202023-03-24%20kl.%2022.37.02.png" width="400px">
+
+
+

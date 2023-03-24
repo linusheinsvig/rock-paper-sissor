@@ -18,6 +18,8 @@
 body {
     background-color: var(--clr-background);
     font-family: var(--font-text);
+    text-align: center;
+    font-size: 2vw;
 }
 
 /* Header and text sizes */
@@ -28,7 +30,7 @@ header img {
 }
 
 h1 {
-    font-size: 7vw;
+    font-size: clamp(3em, 7vw, 8em);
     text-align: center;
     color: var(--clr-dark);
     margin: 1vw 0 1vw 0;
@@ -37,20 +39,13 @@ h1 {
 
 h2 {
     color: var(--clr-dark);
-    text-align: center;
-    font-size: 2vw;
-    margin: 1vw;
+    font-size: clamp(1em, 3vw, 2em);
 }
 
 h3 {
     color: var(--clr-dark);
-    text-align: center;
-    font-size: 3vw;
-}
-
-span {
-    color: var(--clr-dark);
-    font-size: 4vw;
+    font-size: clamp(1em, 2vw, 2em);
+    margin: 1vw;
 }
 
 /* Game Window */
@@ -105,18 +100,6 @@ span {
 .scissors {
     background-image: url(/assets/images/scissor.png);
     background-size: 100% 100%;
-}
-
-/* Result text box */
-
-.result-box {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-
-.score  img{
-    width: 10vw;
 }
 
 /* Scoring area */

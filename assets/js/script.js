@@ -28,23 +28,23 @@ function win(userChoice, computerChoice) {
     userScore++;
     userScoreSpan.innerHTML = userScore;
     result.innerHTML = `${convertToI(userChoice)}  Beats  ${convertToI(computerChoice)}`;
-    yourScore.style.backgroundColor = 'green';
-    oponentScoreDiv.style.backgroundColor = 'red';
+    result.classList.add('correct')
+    setTimeout(function() { result.classList.remove('correct') }, 1000);
 }
 
 function lose(userChoice, computerChoice) {
     oponentScore++;
     oponentScoreSpan.innerHTML = oponentScore;
     result.innerHTML = `${convertToI(userChoice)}  Gets Beaten By  ${convertToI(computerChoice)}`;
-    yourScore.style.backgroundColor = 'red';
-    oponentScoreDiv.style.backgroundColor = 'green';
+    result.classList.add('wrong')
+    setTimeout(function() { result.classList.remove('wrong') }, 1000);
 }
 
 function draw(userChoice, computerChoice) {
     result.innerHTML = "It's a Draw!";
     result.innerHTML = `${convertToI(userChoice)}  Cant't Do Anything To  ${convertToI(computerChoice)}`;
-    yourScore.style.backgroundColor = 'var(--clr-gray)';
-    oponentScoreDiv.style.backgroundColor = 'var(--clr-gray)';
+    result.classList.add('draw')
+    setTimeout(function() { result.classList.remove('draw') }, 1000);
 }
 
 // Main Game function

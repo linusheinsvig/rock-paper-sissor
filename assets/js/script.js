@@ -6,37 +6,48 @@ let result = document.getElementById('result')
 let rock = document.getElementById('rock');
 let paper = document.getElementById('paper')
 let scissors = document.getElementById('scissors')
+let yourScore = document.getElementById('your-score')
+let oponentScoreDiv = document.getElementById('oponent-score')
 
+// Generates computers choice
 function getComputerChoice() {
     let choices = ['rock', 'paper', 'scissors'];
     let randomNumber = Math.floor(Math.random() * 3);
     return choices[randomNumber];
 }
 
+// Changes choice to font awsome icons
 function convertToI(word) {
     if (word === 'rock') return '<i class="fa-regular fa-hand-back-fist"></i>'
     if (word === 'paper') return '<i class="fa-regular fa-hand"></i>'
     if (word === 'scissors') return '<i class="fa-regular fa-hand-scissors"></i>'
 }
 
+// Updating scores for winner, looser and draw
 function win(userChoice, computerChoice) {
     userScore++;
     userScoreSpan.innerHTML = userScore;
-    result.innerHTML = `${convertToI(userChoice)}  Beats  ${convertToI(computerChoice)} <br> Your a Winner!`;
+    result.innerHTML = `${convertToI(userChoice)}  Beats  ${convertToI(computerChoice)}`;
+    yourScore.style.backgroundColor = 'green';
+    oponentScoreDiv.style.backgroundColor = 'red';
 }
 
 function lose(userChoice, computerChoice) {
     oponentScore++;
     oponentScoreSpan.innerHTML = oponentScore;
-    result.innerHTML = `${convertToI(userChoice)}  Gets Beaten By  ${convertToI(computerChoice)} <br> You Lose...`;
-    document.getElementsByClassName('result-box').classList.add('.wrong')
+    result.innerHTML = `${convertToI(userChoice)}  Gets Beaten By  ${convertToI(computerChoice)}`;
+    yourScore.style.backgroundColor = 'red';
+    oponentScoreDiv.style.backgroundColor = 'green';
 }
 
 function draw(userChoice, computerChoice) {
     result.innerHTML = "It's a Draw!";
-    result.innerHTML = `${convertToI(userChoice)}  Cant't Do Anything To  ${convertToI(computerChoice)} <br> It's a Draw!`;
+    result.innerHTML = `${convertToI(userChoice)}  Cant't Do Anything To  ${convertToI(computerChoice)}`;
+    yourScore.style.backgroundColor = 'var(--clr-gray)';
+    oponentScoreDiv.style.backgroundColor = 'var(--clr-gray)';
 }
 
+// Main Game function
 function game(userChoice) {
     let computerChoice = getComputerChoice();
     switch (userChoice + computerChoice) {
@@ -58,7 +69,7 @@ function game(userChoice) {
     }
 }
 
-
+// EventListeners for user choises
 function main() {
     rock.addEventListener('click', function () {
         game('rock');

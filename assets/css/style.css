@@ -93,7 +93,8 @@ footer a i:hover {
 .choises:hover {
     transform: scale(1.1);
     z-index: 2;
-} 
+    cursor: pointer;
+}
 
 .choises div {
     height: 15vw;
@@ -112,17 +113,17 @@ footer a i:hover {
 }
 
 .rock {
-    background-image: url(/assets/images/rock.png);
+    background-image: url(assets/images/rock.png);
     background-size: 100% 100%;
 }
 
 .paper {
-    background-image: url(/assets/images/paper.png);
+    background-image: url(assets/images/paper.png);
     background-size: 100% 100%;
 }
 
 .scissors {
-    background-image: url(/assets/images/scissor.png);
+    background-image: url(assets/images/scissor.png);
     background-size: 100% 100%;
 }
 
@@ -163,7 +164,7 @@ footer a i:hover {
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 25px;
-} 
+}
 
 .score div {
     height: 10vw;
@@ -176,7 +177,3 @@ footer a i:hover {
     margin: 0 2em 0 2em;
     box-shadow: 5px 5px 5px 5px var(--clr-gray);
 }
-
-
-
-

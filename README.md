@@ -107,9 +107,108 @@ Devices used to test website:
 <li>Iphone 12 Max
 </ul>
 
-Wave Accessibility test
+#### Wave Accessibility test
 <hr>
 <img src="assets/README-images/Ska%CC%88rmavbild%202023-03-24%20kl.%2022.37.02.png" width="400px">
 
+#### Lighthouse test
+<hr>
+For Desktop
+<img src="assets/README-images/Ska%CC%88rmavbild%202023-03-24%20kl.%2022.31.46.png" width="400px">
+For Mobile
+<img src="assets/README-images/Ska%CC%88rmavbild%202023-03-24%20kl.%2022.31.03.png" width="400px">
 
+#### W3C Jigsaw test
+<img src="assets/README-images/Ska%CC%88rmavbild%202023-03-24%20kl.%2022.37.41.png" width="400px">
+
+#### W3C Validator Test
+<img src="assets/README-images/Ska%CC%88rmavbild%202023-03-24%20kl.%2022.38.59.png" width="400px">
+
+## Manaul Testing
+<hr>
+
+### Game Functions
+<ul>
+    <li>Ran the game 50 times on each choice
+    <li>Everytime the result area showed me correctly what I played and what the computer played
+    <li>The scores where updated correctly every time
+    <li>The games always come out pretty even so the match seems to work correctly
+    </li>
+</ul>
+
+### External Links
+<ul>
+    <li>All of the footer links send me to the right place
+    <li>All external links opens in a new tab as expected
+    </li>
+</ul>
+
+## Deployment
+<hr>
+
+### Version Control
+This site was created in GitPod and pushed to Github to the remote repository 'sofieheinsvig'
+<br>
+
+The following commands where used in this proccess
+<ul>
+<li>git add .
+</ul>
+<li>This command was used to add the file(s) to the staging area befor commiting
+</ul>
+<li>git commit -m "commit message"
+</ul>
+<li>This command was used to commit changes to the local repository before pushing them to the remote repository
+</ul>
+<li>git push
+<ul>
+<li>This command was used to push all localy stores changes to the remote repository on github
+</ul>
+
+### Deployment to Github-pages
+<ul>
+<li>This site was deployed to GitHub pages. The steps used to deploy are as follows:
+<ul>
+<li>In the GitHub repository, navigate to the Settings button om top of the page
+<li>From the menu on the left side select 'Pages'
+<li>From the source sections drop-down menu, select 'Deploy from branch'
+<li>From the Branch drop-down menu, select 'main'
+<li>Press 'Save'
+<li>After that you can find the live link on the right side of your repository under the heading 'Enviroments'
+</ul>
+</ul>
+The live link can be found here: 
+
+https://linusheinsvig.github.io/rock-paper-sissor/
+
+### Clone the Repository Code Locally
+Navigate to the GitHub Repository you want to clone
+<ul>
+<li>Click on the code drop down button
+<li>Select HTTPS
+<li>Copy the repository link to your clipboard
+<li>Open you IDE of choice (git must be installed for the next step)
+<li>Type git clone copied-git-url into the IDE termial
+</ul>
+The project will now been cloned on your local machine for use.
+
+## Credits & Content
+<hr>
+<ul>
+    <li>Web Dev Simplified youtube channel
+        <ul><li>
+
+https://www.youtube.com/@WebDevSimplified/videos
+<li>I learnt alot about making games in JavaScript and espesially about switch statments on this channel</li></ul>
+
+<li>KnifeCircus youtube channel
+    <ul><li>
+   
+https://www.youtube.com/@KnifeCircus
+<li>Also a great teacher for building games in JavaScript<li></ul>
+<li>KindPNG
+    <ul><li>
+    
+https://www.kindpng.com/
+<li>KindPNG was where I found all the images used on this website
 
